@@ -8,7 +8,7 @@
 <%= radio_button :user,:color,"blue" %>青
 <%= radio_button :user,:color,"green" %>緑
 <br><%= select :user,:address, ["ドナルド・トランプ","ヒラリー・クリントン","バラク・オバマ"] %>
-<select id="book_publish" name="book[publish]" >
+<%= collection_select(:book, :publish, Publish.all, :id,:publishname) %>
  <option value="1">ホワイトハウス</option>
  <option value="2">日本大使館</option>
  <option value="3">伊勢志摩</option>
