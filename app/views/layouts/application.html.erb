@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <title>Railbook</title>
@@ -8,7 +8,10 @@
 </head>
 <body>
 
+<%= image_tag 'railbook.png' %>
+<ul type="disc">
+<li><%= link_to "書籍一覧","http://localhost:3000/books" %></li>
+<li><%= link_to "出版社一覧","http://localhost:3000/publishes" %></li>
 <%= yield %>
-
 </body>
 </html>
