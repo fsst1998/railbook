@@ -18,7 +18,7 @@
         <td><%= publish.address %></td>
         <td><%= link_to 'Show', publish %></td>
         <td><%= link_to 'Edit', edit_publish_path(publish) %></td>
-        <td><%= link_to 'Destroy', publish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', publish_id, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
