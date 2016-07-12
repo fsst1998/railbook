@@ -1,5 +1,5 @@
 class Book < ActiveRecord::Base
   has_many :reviews
-  has_many :publishes
+  belongs_to :publish
   validates_length_of :isbn, :maximum => 13
 end
