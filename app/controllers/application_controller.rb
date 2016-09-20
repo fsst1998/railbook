@@ -4,6 +4,8 @@
   protect_from_forgery with: :exception
   before_action :check_logined
   private
+
+
   def check_logined
     if session[:usr] then
      begin

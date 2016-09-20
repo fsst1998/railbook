@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'login/index'
-
   post 'login/auth'
+  delete 'login/index'
 
   resources :users
   resources :books
@@ -66,4 +66,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+ end
